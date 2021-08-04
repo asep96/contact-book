@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>Contact List</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="styles.css">
+<body>
+    <div class="main">
+    <h1>Your Contacts</h1>
+
+    <div class="add-contact-container">
+        <form id="add-contact-form">
+            <label for="name">Name: </label> <br>
+            <input class="input-field" type="text" id="name" name="name"> <br>
+            <label for="phonenumber">Phone Number: </label> <br>
+            <input class="input-field" type="text" id="phonenumber" name="phonenumber"> <br>
+            <label for="email">Email Address: </label> <br>
+            <input class="input-field" type="text" id="email" name="email"> <br>
+            <input class="add-contact-button" type="submit" value="Add Contact" onclick="addContact(document.getElementById('name').value, document.getElementById('phonenumber').value, document.getElementById('email').value)">
+        </form>
+    </div>
+    
+    <div id="contact-card-container"></div>
+    
+    
+<script src="contactBook.js"></script>
+</body>
+</html>
